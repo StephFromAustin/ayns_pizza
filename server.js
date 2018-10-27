@@ -11,6 +11,7 @@ let PORT = process.env.PORT || 3000;
 //Sets up the express add to handle json parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'assets')));
 
 // Data =============================================
 let reservations = [
@@ -49,7 +50,7 @@ app.post('/reservations', function (req, res){
     res.json(newCustomer);
 });
 
-app.get("/", function(req, res){
+app.get("/home.html", function(req, res){
     res.sendFile(path.join(__dirname,"/assets/home.html"));
 });
 

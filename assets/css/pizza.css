@@ -1,34 +1,41 @@
+
+*{
+    color: white;
+}
 .tableBody{
-    background-image: url(../imgs/pizzaTable.jpg);
-    background-size: 50%;
-    }
-    .jumbotron{
-        background: rgba(0, 0, 0, 0.925);
-    }
-    th,td{
-        color: white;
-    }
-    #homeBtn{
-        height:47px;
-    
-    }
-    .table{
-        background: rgba(0, 0, 0, 0.555);
-    }
-    
-    .home{
-    background-image: url("../imgs/eatpizza.jpg");
-    
-    }
-    
-    .reserve{
-        width: 100%;
-        background-image: url("../imgs/reserve.jpg");
-        background-size: cover
-    }
-    
-    
-    .formText{
-        color: #f2e9c9;
-    
-    }
+background-image: url(../imgs/pizzaTable.jpg);
+background-size: 50%;
+}
+.jumbotron{
+    background: rgba(0, 0, 0, 0.925);
+}
+th,td{
+    color: white;
+}
+#homeBtn{
+    height:47px;
+
+}
+.table, #formBorder{
+    background: rgba(0, 0, 0, 0.555);
+}
+
+
+
+
+.home{
+background-image: url("../imgs/eatpizza.jpg");
+
+}
+
+.reserve{
+    width: 100%;
+    background-image: url("../imgs/reserve.jpg");
+    background-size: cover
+}
+
+
+.formText{
+    color: #f2e9c9;
+
+}
