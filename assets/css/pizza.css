@@ -1,4 +1,17 @@
-body{
-background-image: url(../imgs/eatpizza.jpg);
+.tableBody{
+background-image: url(../imgs/pizzaTable.jpg);
+background-size: 50%;
+}
+.jumbotron{
+    background: rgba(0, 0, 0, 0.925);
+}
+th,td{
+    color: white;
+}
+#homeBtn{
+    height:47px;
 
-};
+}
+.table{
+    background: rgba(0, 0, 0, 0.555);
+}
