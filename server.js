@@ -32,14 +32,6 @@ let reservations = [
 ];
 //Routes
 //=======================================================
-// CREATE NEW RESERVATION THAT TAKES IN JSON INPUT 
-app.post("api/tables", function (req, res) {
-    let newReservation = req.body;
-});
-
-app.get("/", function(req, res){
-    let table = req.params.table;
-})
 
 // VARIABLES 
 let customer = [];
@@ -55,6 +47,18 @@ app.post('/reservations', function (req, res){
         customer.push(newCustomer);
     }
     res.json(newCustomer);
+});
+
+app.get("/", function(req, res){
+    res.sendFile(path.join(__dirname,"/assets/home.html"));
+});
+
+app.get("/reservations", function(req, res){
+    res.sendFile(path.join(__dirname,"/assets/reserve.html"));
+});
+
+app.get("/tables", function(req, res){
+    res.sendFile(path.join(__dirname,"/assets/tables.html"));
 });
 
 // SERVER LISTEN FUNCTION
