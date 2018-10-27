@@ -1,4 +1,6 @@
-
+*{
+    color: white;
+}
 .tableBody{
 background-image: url(../imgs/pizzaTable.jpg);
 background-size: 50%;
@@ -13,9 +15,12 @@ th,td{
     height:47px;
 
 }
-.table{
+.table, #formBorder{
     background: rgba(0, 0, 0, 0.555);
 }
+
+=======
+
 
 .home{
 background-image: url("../imgs/eatpizza.jpg");

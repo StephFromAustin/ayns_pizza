@@ -13,12 +13,12 @@
 <body class='tableBody'>
     <div class = "container titleContainer text-center">
     <div class="jumbotron">
-        <h1 class="display-4">Ayn's Pizza</h1>
-        <p class="lead">Austin's most delicious pizza! </p>
+        <h1 class="display-4 text-light">Ayn's Pizza</h1>
+        <p class="lead text-light">Austin's most delicious pizza! </p>
         <hr class="my-4">
-        <p>Please click the "Reservation" button to book your table!</p>
+        <p class="text-light">Please click the "Reservation" button to book your table!</p>
         <div class='title'>
-        <a class="btn btn-primary btn-lg" href="tables.html" role="button" id="tableBtn">View Tables</a>
+        <a class="btn btn-success btn-lg" href="tables.html" role="button" id="tableBtn">View Tables</a>
         <a class="btn btn-danger btn-lg" href="reserve.html" role="button">Make a Reservation</a>
         </div>
       </div>
@@ -62,7 +62,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     // let rsvBtn = document.getElementById("tableBtn");
-    let homeBtn = "<a class='btn m-2 pt-3 fa fa-home btn-primary btn-lg' href='/' role='button' id='homeBtn'></a>";
+
+    let homeBtn = "<a class='btn m-2 btn-primary btn-lg' href='home.html' role='button' id='homeBtn'>Home Page</a>";
+=======
+
     $("#tableBtn").hide();
     $(homeBtn).appendTo('.title');
 
