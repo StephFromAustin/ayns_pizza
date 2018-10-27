@@ -53,11 +53,11 @@ app.get("/", function(req, res){
     res.sendFile(path.join(__dirname,"/assets/home.html"));
 });
 
-app.get("/reservations", function(req, res){
+app.get("/reserve.html", function(req, res){
     res.sendFile(path.join(__dirname,"/assets/reserve.html"));
 });
 
-app.get("/tables", function(req, res){
+app.get("/tables.html", function(req, res){
     res.sendFile(path.join(__dirname,"/assets/tables.html"));
 });
 
